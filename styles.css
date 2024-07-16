@@ -1,17 +1,90 @@
-body {
+body.index {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    margin: 0;
+    margin: 20;
     padding: 0;
+    background-image: url('rosa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 h1 {
-    color: #333;
+    color: #0d027e;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 2%;
 }
 
 p {
     text-align: center;
     color: #666;
+}
+
+#carta {
+    color: pink;
+    text-align: left;
+    width: 50%; 
+    height: 150px; 
+    margin-left: 0;
+    margin-top:0;
+}
+.carta_foto{
+display: flex;
+justify-content: flex-end;
+width: 100%;
+}
+.carta_foto img{
+width: 50%;
+margin-right: 20px;
+}
+
+body.inicio {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: #f0f0f0;
+    background-image: url('rosa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0 ;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width:100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
 }
