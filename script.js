@@ -15,7 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     if (username === validUsername && password === validPassword) {
         // Redirigir a la página de contenido
-        window.location.href = 'index.html';
+        window.location.href = 'contenido.html';
     } else {
         // Mostrar mensaje de error
         document.getElementById('error-message').textContent = 'Usuario o contraseña incorrectos';
