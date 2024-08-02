@@ -7,11 +7,12 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body class="contenido">
-        <h1>¡Feliz cumpleaños!</h1>
-        <h2>CARTA</h2>
+        <h1><u>¡Feliz cumpleaños!</u>💕</h1>
+        <h2 id="amor">CARTA</h2>
         <div class="carta_foto">
         <img src="comunion.jpg" alt="Descripcion de la imagen">
-            <p id="carta">Esta carta va dirigida a la persona que me ha demostrado que el amor real existe. Si tu, 
+        <p id="carta" class="marco">
+            Esta carta va dirigida a la persona que me ha demostrado que el amor real existe. Si tu, 
             Lucia, mejor dicho, mi vida. Te escribo esta carta porque hace tiempo que no te hago este 
             tipo de detalles que la verdad considero que son importantes hacerlas de vez en cuando, 
             al mismo tiempo siendo un detalle bonito para hacer. Ya vamos camino de los dos años 
@@ -39,9 +40,10 @@
             en como soy, como te trato y demás. Intento dar lo mejor de mi, aunque se que tengo 
             varios aspectos a mejorar, los cuales te prometo que se mejoraran. Te amo mucho y 
             gracias por elegirme cada día
-            Att. Adrian(El amor de tu vida)</p>
+            Att. Adrian(El amor de tu vida)
+        </p>
         </div>
-        <h3 class="Fotos">RECORDATORIO DE CADA MOMENTO VIVIDO A TU LADO</h3>
+        <h3 class="Fotos">RECORDATORIO DE MOMENTOS VIVIDOS A TU LADO</h3>
         <div class="foto1">
         <img src="playa.jpg" alt="Descripcion de la imagen" class="imagen1">
         <img src="feria.jpg" alt="Descripcion de la imagen" class="imagen2">
@@ -55,31 +57,42 @@
         <div id="videoCarousel">
             <button class="arrow left" onclick="previousVideo()">&#9664;</button>
             <video class="active" controls>
-                <source src="lucia1.mp4" type="video/mp4">
+                <source src="lucia6.mp4" type="video/mp4">
             </video>
             <video controls>
-                <source src="lucia2.mp4" type="video/mp4">
+                <source src="lucia7.mp4" type="video/mp4">
             </video>
             <video controls>
-                <source src="lucia3.mp4" type="video/mp4">
+                <source src="lucia8.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="lucia9.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="lucia10.mp4" type="video/mp4">
             </video>
             <button class="arrow right" onclick="nextVideo()">&#9654;</button>
         </div>
 
         <form id="quizForm">
-            <h1>Cuestionario</h1>
-            <p>¿Fecha en la que iniciamos nuestra relación? (Utilizar - para separar numeros)</p>
+            <h1><u>Cuestionario</u></h1>
+            <h3>Debes acertar todas las preguntas para obtener una recompensa. Todas las respuestas deben estar en minúsculas.</h3>
+            <p>¿Fecha en la que iniciamos nuestra relación? (Utilizar - para separar números)</p>
             <input type="text" id="question1">
             <p>¿Restaurante que más visitamos con diferencia?</p>
             <input type="text" id="question2">
-            <p>¿Lugar en el que ocurrió nuestra primera cita?</p>
+            <p>¿Lugar/Restaurante en el que ocurrió nuestra primera cita?</p>
             <input type="text" id="question3">
             <p>¿Cómo se llama mi perra?</p>
             <input type="text" id="question4">
             <p>¿Cual es mi color favorito?</p>
             <input type="text" id="question5">
-            <p>¿Cual fue la contraseña para poder entrar a esta página?</p>
+            <p>¿Soy el mejor novio del mundo?</p>
             <input type="text" id="question6">
+            <p>¿Cuanto es (5*5+5)*3?</p>
+            <input type="text" id="question7">
+            <p>¿Cual fue la contraseña para poder entrar a esta página?</p>
+            <input type="text" id="question8">
             <button type="submit">Enviar</button>
         </form>
         <script>
@@ -94,15 +107,20 @@
                 var answer4 = document.getElementById('question4').value;
                 var answer5 = document.getElementById('question5').value;
                 var answer6 = document.getElementById('question6').value;
+                var answer7 = document.getElementById('question7').value;
+                var answer8 = document.getElementById('question8').value;
+    
     
                 if (answer1.toLowerCase() === '26-09-22') correctAnswers++;
                 if (answer2.toLowerCase() === 'lsan') correctAnswers++;
                 if (answer3.toLowerCase() === 'burger') correctAnswers++;
                 if (answer4.toLowerCase() === 'luna') correctAnswers++;
                 if (answer5.toLowerCase() === 'amarillo') correctAnswers++;
-                if (answer6.toLowerCase() === 'lucia') correctAnswers++;
+                if (answer6.toLowerCase() === 'si') correctAnswers++;
+                if (answer7.toLowerCase() === '90') correctAnswers++;
+                if (answer8.toLowerCase() === 'lucia') correctAnswers++;
     
-                if (correctAnswers === 6) {
+                if (correctAnswers === 8) {
                     window.location.href = 'password.html';
                 } else {
                     alert('Alguna respuesta es incorrecta. Intenta de nuevo.');
