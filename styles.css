@@ -10,16 +10,27 @@ body.contenido {
 }
 
 h1 {
-    color: #0d027e;
+    color: #0ae5ed;
     text-align: center;
     margin-top: 2%;
+    font-size: 50px;
 }
 
 h3, h4 {
     font-family: Arial, sans-serif;
     font-size: 28px; 
-    color: black;
+    color: rgb(0, 251, 255);
     margin-bottom: 10px; 
+}
+
+h2{
+    color:rgb(0, 251, 255);
+    font-size: 28px;
+}
+
+#amor{
+    color:rgb(0, 251, 255);
+    font-size: 30px;
 }
 
 #recoger {
@@ -32,13 +43,22 @@ h3, h4 {
 }
 
 #carta {
-    color: black;
-    text-align: left;
-    width: 50%; 
-    height: 150px; 
-    margin-left: 0;
-    margin-top:0;
-}
+        color: black;
+        width: auto; 
+        margin: 5px;
+        margin-left: 0;
+        margin-top:0;
+        padding-top: 75px;
+        padding-left: 140px;
+        padding-right: 140px;
+        border-radius: 5px; /* Bordes redondeados */
+        display: inline-block; /* Ajustar al contenido */
+        max-width: 100%; /* Asegurar que no se desborde */
+        background-image: url('carta2.jpeg'); /* Ruta a tu imagen */
+        background-size: cover;
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        text-indent: 20px;
+    }
 
 .carta_foto{
 display: flex;
@@ -47,18 +67,21 @@ width: 100%;
 }
 
 .carta_foto img{
-width: 50%;
-margin-right: 20px;
+width: 30%;
+margin-right: 30px;
+margin-left: 40px;
+height: 600px;
 }
 
 .foto1{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .foto1 img{
-    width: 30%;
-    height: 600px;
+    width: 20%;
+    height: 400px;
+    margin: 20px;
 }
 
 .foto2{
@@ -68,7 +91,8 @@ margin-right: 20px;
 }
 
 .foto2 img{
-    width: 30%;
+    width: 20%;
+    height: 400px;
     margin-top: 20px;
     margin-right: 20px;
 }
@@ -91,7 +115,11 @@ body.index {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+    height: 300px;
     text-align: center;
+    background-image: url('amor.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 input[type="text"],
@@ -104,6 +132,13 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
+label[for="password"] {
+    font-family: 'Times New Roman', Times, serif; /* Cambia 'Arial' a la fuente que prefieras */
+    font-size: 22px; /* Cambia el tamaño de la fuente según prefieras */
+    color: rgb(0, 251, 255);; /* Cambia el color según prefieras */
+    font-weight: bold;
+}
+
 button {
     width:100%;
     padding: 10px;
@@ -112,6 +147,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 14px;
 }
 
 button:hover {
@@ -191,4 +227,18 @@ video {
 
 form {
     margin-top: 50px;
+}
+
+.vale1 {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+.vale1 img {
+    width: 50%;
+}
+
+#contraseña{
+    font-family: fantasy;
+    font-size: 25px;
 }

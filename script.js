@@ -6,19 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
     // Datos de prueba (en un entorno real, verifica en el servidor)
-    const validUsername = 'lucia';
     const validPassword = 'adri';
 
-    if (username === validUsername && password === validPassword) {
+    if (password === validPassword) {
         // Redirigir a la página de contenido
         window.location.href = 'contenido.html';
     } else {
         // Mostrar mensaje de error
-        document.getElementById('error-message').textContent = 'Usuario o contraseña incorrectos';
+        document.getElementById('error-message').textContent = 'Contraseña incorrecta';
     }
 });
 
@@ -59,5 +57,7 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
     }
 });
 
-
+document.querySelectorAll('.linea').forEach(linea => {
+    linea.style.marginLeft = Math.floor(Math.random() * 50) + 'px';
+});
 
